@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/appFargate",
+          "awslogs-group": "/ecs/fargate2",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -54,7 +54,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "appContainer"
+      "name": "appcontainer2"
     }
   ],
   "placementConstraints": [],
@@ -64,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:748566091639:task-definition/appFargate:1",
-  "family": "appFargate",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:748566091639:task-definition/fargate2:1",
+  "family": "fargate2",
   "requiresAttributes": [
     {
       "targetId": null,
