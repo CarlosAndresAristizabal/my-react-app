@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/fargate2",
+          "awslogs-group": "/ecs/appFargate",
           "awslogs-region": "us-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -33,7 +33,7 @@
       "workingDirectory": null,
       "secrets": null,
       "dockerSecurityOptions": null,
-      "memory": null,
+      "memory": 512,
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
@@ -54,7 +54,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "appcontainer2"
+      "name": "appContainer"
     }
   ],
   "placementConstraints": [],
@@ -64,8 +64,8 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:748566091639:task-definition/fargate2:1",
-  "family": "fargate2",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:748566091639:task-definition/appFargate:5",
+  "family": "appFargate",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -126,7 +126,7 @@
     "cpuArchitecture": null
   },
   "cpu": "256",
-  "revision": 1,
+  "revision": 5,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
